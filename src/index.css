@@ -1,0 +1,235 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+  /* border: 1px solid red; */
+}
+body{
+  width: 100%;
+}
+
+#hero-text{
+  font-size: 2.9rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 4px 0px 4px #541904;
+
+}
+nav{
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.nav-bar{
+  /* border: 1px solid black; */
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  height: 4.8rem;
+}
+.nav-box{
+  flex-basis: 35%;
+  /* border: 1px solid brown; */
+}
+.nav-box:first-child{
+  padding-left: 3rem;
+}
+.nav-box:first-child h1{
+  color: #3a3a3a;
+  font-weight: normal;
+  font-size: 1.7rem;
+}
+.nav-box:first-child h1 span{
+  color: #a71f23;
+  font-weight: 500;
+}
+
+.nav-box:nth-child(2) ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-box:nth-child(2) ul li{
+  color: #3a3a3a;
+  font-size: 1rem;
+
+}
+.nav-box:nth-child(3) ul{
+  list-style: none;
+  display: flex;
+  justify-content: right;
+}
+.nav-box:nth-child(3) ul li{
+  margin-right: 2rem;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    
+  }
+  .nav-bar{
+    height: 3rem;
+  }
+  .nav-box:first-child h1{
+    color: #3a3a3a;
+    font-weight: normal;
+    font-size: 1.25rem;
+  }
+  .nav-box:first-child{
+    order: 2;
+    padding-left: 0;
+  }
+  .nav-box:nth-child(2){
+    align-self: flex-start;
+    order: 1;
+  }
+
+  .nav-box:nth-child(2) ul{
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  #menu{
+    display: block;
+  }
+
+  .nav-box:nth-child(2) ul li{
+    color: #3a3a3a;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+
+  .nav-box:nth-child(3){
+    order: 3;
+  }
+  .nav-box:nth-child(3) ul{
+    justify-content: center;
+  }
+  .nav-box:nth-child(3) ul li{
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .nav-box:nth-child(3) ul li img{
+    width: 1.25rem;
+  }
+  .hamburger-menu{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 2;
+  }
+  section:first-of-type{
+    /* border: 1px solid brown; */
+    padding-top: 2rem;
+  }
+  section:first-of-type img{
+    width: 100%;
+    /* min-width: 100%; */
+    height: 40vh;
+    margin-bottom: 2rem;
+  }
+  section:nth-of-type(2){
+    background: #F0F0F0;
+  }
+  .objective-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3a3a3a;
+    justify-content: center;
+  }
+  .obj-box{
+    display: flex;
+    flex-basis: 30%;
+    padding: 1rem 0;
+  }
+  .obj-box:first-of-type, .obj-box:nth-of-type(2){
+    border-bottom: 2px solid  rgba(58, 58, 58, 0.10);
+  }
+  .obj-box img{
+    margin: 1rem;
+    width: 3.5rem;
+  }
+  .obj-box-details{
+    color: #3A3A3A;
+  }
+  .obj-box-details p{
+    font-size: 0.93rem;
+    padding-right: 0.4rem;
+    
+  }
+  .obj-box-details h1{
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+  }
+  section:nth-child(3){
+    padding-top: 2rem;
+  }
+  section:nth-child(3) h1{
+    text-align: center;
+    color: #3A3A3A;
+    margin-bottom: 1rem;
+  }
+  .slidescroll-container{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+  }
+  .scrollbox{
+    flex-basis: 25%;
+    /* border: 1px solid yellow; */
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    margin-right: 1.5rem;
+    box-shadow: 5px 8px 5px rgba(58, 58, 58, 0.10);
+  }
+  .slidescroll-container img{
+    height: 23vh;
+  }
+  .scrollbox-details{
+    padding: 5px 3px;
+    text-align: center;
+  }
+  .scrollbox-details h1{
+    font-weight: normal;
+    color: #3A3A3A;
+    font-size: 1.15rem;
+  }
+  .scrollbox-details h2{
+    font-weight: normal;
+    color: #a71f23;
+    font-size: 1.15rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
